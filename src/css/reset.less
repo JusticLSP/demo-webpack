@@ -1,0 +1,89 @@
+/* 初始化样式代码文件 */
+body,
+p,
+ul,
+ol,
+dl,
+dt,
+dd,
+input,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: '微软雅黑';
+}
+
+body {
+    width: 100%;
+    font-size: 12px;
+    cursor: default;
+    font-family: '微软雅黑';
+    background-color: #fff;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+img {
+    /* display: block; */
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none !important;
+    color: #696969;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+/* 最大版心 */
+.layui-container {
+    position: relative;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* 那里需要浮动,就在那里加上这个类 */
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*字体颜色*/
+.color-red {
+    color: red;
+}
+
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: "";
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}

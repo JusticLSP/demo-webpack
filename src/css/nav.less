@@ -1,0 +1,164 @@
+/* 导航栏 */
+nav.nav-shadow {
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .3);
+    overflow: hidden;
+    transition: all .5s;
+    -ms-transition: all .5s;
+    -webkit-transition: all .5s;
+    .nav-box {
+        width: 100%;
+        height: 60px;
+        margin: 0 auto;
+        position: relative;
+        max-width: 1200px;
+    }
+    .nav-box-login {
+        width: 200px;
+        line-height: 60px;
+        position: absolute;
+        top: 0;
+        left: 10px;
+        a {
+            display: block;
+            overflow: hidden;
+            text-indent: -9999em;
+            background: url('http://demo.qfpffmp.cn/cssthemes5/ccpt_6_bfz/res/static/img/logo.png') no-repeat center;
+        }
+    }
+    .list-button {
+        width: 25px;
+        height: 30px;
+        position: absolute;
+        top: 22px;
+        right: 15px;
+        cursor: pointer;
+        display: block;
+        span {
+            display: block;
+            margin-bottom: 6px;
+            width: 100%;
+            height: 2px;
+            background-color: #2db5a3;
+            transition: all .5s;
+            -ms-transition: all .5s;
+            -webkit-transition: all .5s;
+        }
+        .spa1 {
+            transform: rotate(45deg) translate(8px, 8px);
+            -ms-transform: rotate(45deg) translate(8px, 8px);
+            -webkit-transform: rotate(45deg) translate(8px, 8px);
+        }
+        .spa3 {
+            transform: rotate(-45deg) translate(-2px, 2px);
+            -ms-transform: rotate(-45deg) translate(-2px, 2px);
+            -webkit-transform: rotate(-45deg) translate(-2px, 2px);
+        }
+    }
+    .nav-list {
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        font-size: 18px;
+        padding: 0 20px;
+        margin: 0;
+        li {
+            display: block;
+            line-height: 60px;
+            position: relative;
+            a {
+                display: block;
+                color: #000;
+            }
+        }
+        li:hover a {
+            color: #2db5a3;
+        }
+        li.is_click::after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            content: '';
+            width: 100%;
+            height: 2px;
+            background-color: #2db5a3;
+        }
+        li.is_click a {
+            color: #2db5a3;
+        }
+        .nav-bar {
+            position: absolute;
+            left: 0;
+            top: 78px;
+            width: 0px;
+            height: 2px;
+            display: none;
+            background-color: #2db5a3;
+            opacity: 0;
+            transition: all .2s;
+            -ms-transition: all .2s;
+            -webkit-transition: all .2s;
+        }
+    }
+}
+
+/* 媒体查询 */
+@media screen and (min-width: 768px) {
+    nav {
+        height: 80px !important;
+        max-height: 80px;
+    }
+    nav .nav-box-login {
+        line-height: 80px;
+        left: 20px;
+    }
+    nav .nav-box {
+        height: 80px;
+        width: 750px;
+    }
+
+    nav .list-button  {
+        display: none;
+    }
+
+    nav .nav-list {
+        width: auto;
+        top: 0;
+        padding: 0 5px;
+        li {
+            display: inline-block;
+            line-height: 80px;
+            margin: 0 33px;
+        }
+        .nav-bar {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav .nav-box {
+        width: 970px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    nav .nav-box {
+        width: 1170px;
+    }
+}
+@media screen and (min-width: 1300px) {
+    nav .nav-box {
+        width: 1200px;
+    }
+}
