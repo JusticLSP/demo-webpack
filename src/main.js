@@ -5,11 +5,11 @@ import $ from 'jquery'
 window.$ = $
 
 // 导入样式
-import './css/reset.less'
-import './css/main.less'
-import './css/nav.less'
+import './css/reset.css'
+import './css/main.css'
+import './css/nav.css'
 import 'bootstrap/dist/css/bootstrap.css'
 
 // 网站关键字/描述
-// $('[name="description"]')[0].content = ''
-// $('[name="keywords"]')[0].content = ''
+$('[name="description"]')[0].content = ''
+$('[name="keywords"]')[0].content = ''
