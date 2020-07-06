@@ -12,8 +12,6 @@ nav {
   background-color: rgba(255, 255, 255, 0.3);
   overflow: hidden;
   transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
 }
 nav .nav-box {
   width: 100%;
@@ -51,18 +49,12 @@ nav .list-button span {
   height: 2px;
   background-color: #2db5a3;
   transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -webkit-transition: all 0.5s;
 }
 nav .list-button .spa1 {
   transform: rotate(45deg) translate(8px, 8px);
-  -ms-transform: rotate(45deg) translate(8px, 8px);
-  -webkit-transform: rotate(45deg) translate(8px, 8px);
 }
 nav .list-button .spa3 {
   transform: rotate(-45deg) translate(-2px, 2px);
-  -ms-transform: rotate(-45deg) translate(-2px, 2px);
-  -webkit-transform: rotate(-45deg) translate(-2px, 2px);
 }
 nav .nav-list {
   width: 100%;
@@ -107,8 +99,6 @@ nav .nav-list .nav-bar {
   background-color: #2db5a3;
   opacity: 0;
   transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -webkit-transition: all 0.2s;
 }
 /* 媒体查询 */
 @media screen and (min-width: 768px) {

@@ -30,7 +30,17 @@ module.exports = {
                 test: /\.css$/,
                 use : [
                     MiniCssExtractPlugin.loader,
-                    { loader: "css-loader" }
+                    { loader: "css-loader" },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: () => [
+                                require('autoprefixer')({
+                                    overrideBrowserslist: ["> 1%", "last 2 versions", "not ie <= 8"]
+                                })
+                            ]
+                        }
+                    }
                 ]
             },
             {
@@ -38,7 +48,17 @@ module.exports = {
                 use : [
                     MiniCssExtractPlugin.loader,
                     { loader: "css-loader" },
-                    { loader: "less-loader" }
+                    { loader: "less-loader" },
+                    {
+                        loader: 'postcss-loader',
+                        options: {
+                            plugins: () => [
+                                require('autoprefixer')({
+                                    overrideBrowserslist: ["> 1%", "last 2 versions", "not ie <= 8"]
+                                })
+                            ]
+                        }
+                    }
                 ]
             },
             {
