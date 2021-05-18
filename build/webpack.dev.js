@@ -4,6 +4,7 @@ const common = require('./webpack.common.js');
 const webpack = require('webpack');
 
 module.exports = merge(common, {
+    mode: 'development',
     devServer: { // 启用开发服务器
         contentBase: path.resolve(__dirname, '../src/index.html'), // 告诉服务器从哪提供内容，只有在想要提供静态文件时才需要
         compress: true, // 一切服务都启用gzip 压缩
@@ -14,6 +15,5 @@ module.exports = merge(common, {
     plugins: [
         new webpack.HotModuleReplacementPlugin(), // webpack内置的热更新插件
     ],
-    mode: 'development',
     devtool: 'cheap-module-eval-source-map',
 })
